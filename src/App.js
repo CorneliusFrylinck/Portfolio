@@ -50,15 +50,6 @@ function App() {
                 </a>
               </p>
               <p className="projItem">
-                <a className="stxt hovertxt" href="http://luxitlegalbill.co.za/"> Luxit Legal Bill
-                  <img className="hoverimg" src={require('../src/img/luxit.png')} alt="please use a different browser"/>
-                </a><br/>
-                <a href="/#">
-                  A legal bill of cost generator that has a login system and allows users to create bills of cost by entering the details of each item one at a time, viewing the product in a table view and finally downloading a pdf-version of the bill. <br/>
-                  Written in HTML, CSS, JS and PHP.
-                </a>
-              </p>
-              <p className="projItem">
                 <a className="stxt hovertxt" href="/#"> Scrapping Dashboard
                   <img className="hoverimg" src={require('../src/img/scrapping.png')} alt="please use a different browser"/>
                 </a><br/>
@@ -139,11 +130,8 @@ function App() {
           </div>
           <footer style={{ width: '100vw', left: 0 }}>
             <div><a className="hovertxt" href="https://www.linkedin.com/in/cornelius-frylinck-710698188"><LinkedinOutlined /> Cornelius Frylinck</a></div>
-            <div><a className="hovertxt" href="https://github.com/CorneliusFrylinck"><GithubOutlined /> New Github</a></div>
-            <div><a className="hovertxt" href="https://github.com/Cornelius2758"><GithubOutlined /> Old Github</a></div>
-            <div><a className="hovertxt" href="https://github.com/Cornelius27584046"><GithubOutlined /> University Github</a></div>
-            <div><a href="corneliusfrylinck@zohomail.com"><MailOutlined /> Email</a></div>
-            <div><a href="cfrylinck1997@gmail.com"><GooglePlusOutlined /> Gmail alternate</a></div>
+            <div><a className="hovertxt" href="https://github.com/CorneliusFrylinck"><GithubOutlined /> New Github &</a><a className="hovertxt" href="https://github.com/Cornelius2758"><GithubOutlined /> Old Github </a></div>
+            <div><a className="hovertxt"  href="corneliusfrylinck@zohomail.com"><MailOutlined /> Email</a></div>
             <div style={{ position: 'absolute', float: 'left', bottom: 0, padding: 5 + 'px'}}>&copy; Cornelius Frylinck - 2021</div>
           </footer>
         </div>
