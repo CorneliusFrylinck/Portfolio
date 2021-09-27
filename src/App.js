@@ -109,17 +109,17 @@ function App() {
                 Married since 20 September 2021<br/>
                 Full Stack .NET Developer / SYSPRO Analyst at iPlan Global since 30 November 2020 (Why start last day of the month? Because it was a Monday and made more sense than starting on a Tuesday)<br/><br/>
                 Favorite languages by function:<br/>
-                - Web: ASP.NET Core MVC - with a lot of JavaScript mixed in to make up for the lack of flexibility of model-driven approaches <br/>
+                <div style={{ float: 'left', left: 0}}>- Web: ASP.NET Core MVC - with a lot of JavaScript mixed in to make up for the lack of flexibility of model-driven approaches <br/>
                 - Desktop: C# - because of the power Visual Studio brings <br/>
                 - Mobile: between Xamarin and Cordova - Xamarin is easy to use, manage and build, but when client-server communication is required, it needs to be done seperately with an API <br/>
-                - Source Control: Azure Devops and GitHub  <br/>
+                - Source Control: Azure Devops and GitHub  </div>
                 <br/><br/>
                 Hobbies:
-                - Watching anime
-                - Gaming (currently Valheim)
-                - Exercise (almost anything except running or anything with stairs)
-                - Anything interesting (most recently shooting and archery)
-                - Learning something new (usually coding- or language related)
+                <div style={{ float: 'left', left: 0}}>- Watching anime<br/>
+                - Gaming (currently Valheim)<br/>
+                - Exercise (almost anything except running or anything with stairs)<br/>
+                - Anything interesting (most recently shooting and archery)<br/>
+                - Learning something new (usually coding- or language related)</div>
                 <br/><br/>
                 Experience working with C, C++, Java, Python, Full Stack Web (Vanilla languages with Express.js backend as well as ASP.NET Core), C# as well as Game Development with Unity.
               </p><br/><br/><br/><br/><br/>
