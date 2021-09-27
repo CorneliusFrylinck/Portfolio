@@ -28,25 +28,25 @@ function App() {
               <h1 className="txt">Favorite 2020 Projects</h1>
               <h2 className="txt">Completed - at least for now ;)</h2>
               <p className="projItem hovertxt">
-                <a href="/#" className="stxt" href="https://github.com/Cornelius27584046/python-Djarvis"><GithubOutlined /> Python Djarvis
+                <a className="stxt" href="https://github.com/Cornelius27584046/python-Djarvis"><GithubOutlined /> Python Djarvis
                   <img className="hoverimg" src={require('../src/img/django.png')} alt="please use a different browser"/>
                 </a><br/>
 
                 <a href="/#">Djarvis is a small console project that is meant to be a development-orientated version of Iron Man's Jarvis program. Djarvis starts on a loop, listening until it hears the word "open". After the word has been said, the program asks what you want to do, gets the information regarding what you want to do and thereafter opens the pre-designated programs. For example, when I want to work on web development, Djarvis opens vsCode and my web browser.</a>
               </p>
               <p className="projItem hovertxt">
-                <a href="/#" className="stxt" href="https://github.com/Cornelius27584046/python-Connect-4"><GithubOutlined /> Python Connect 4
+                <a className="stxt" href="https://github.com/Cornelius27584046/python-Connect-4"><GithubOutlined /> Python Connect 4
                   <img className="hoverimg" src={require('../src/img/connect4.png')} alt="please use a different browser"/>
                 </a><br/>
                 <a href="/#">A connect 4 game that is written in Python3 where you play against an AI that is written using the MiniMax algorithm.</a>
               </p>
               <p className="projItem hovertxt">
-                <a href="/#" className="stxt" href="https://github.com/Cornelius27584046/unity3D-Arena-Game"><GithubOutlined /> Unity 3D Arena Game
+                <a className="stxt" href="https://github.com/Cornelius27584046/unity3D-Arena-Game"><GithubOutlined /> Unity 3D Arena Game
                    </a><br/>
                 <a href="/#">Small but cool 3D game written by following a tutorial by AwesomeTuts.</a>
               </p>
               <p className="projItem">
-                <a href="/#" className="stxt hovertxt" href="http://luxitlegalbill.co.za/"> Luxit Legal Bill
+                <a className="stxt hovertxt" href="http://luxitlegalbill.co.za/"> Luxit Legal Bill
                   <img className="hoverimg" src={require('../src/img/luxit.png')} alt="please use a different browser"/>
                 </a><br/>
                 <a href="/#">
@@ -93,8 +93,8 @@ function App() {
             </div>
           </div>
           <footer style={{ width: '100vw', left: 0 }}>
-            <div><a href="/#" className="hovertxt" href="https://www.linkedin.com/in/cornelius-frylinck-710698188"><LinkedinOutlined /> Cornelius Frylinck</a></div>
-            <div><a href="/#" className="hovertxt" href="https://github.com/Cornelius27584046"><GithubOutlined /> Cornelius27584046</a></div>
+            <div><a className="hovertxt" href="https://www.linkedin.com/in/cornelius-frylinck-710698188"><LinkedinOutlined /> Cornelius Frylinck</a></div>
+            <div><a className="hovertxt" href="https://github.com/Cornelius27584046"><GithubOutlined /> Cornelius27584046</a></div>
             <div><GooglePlusOutlined /> cfrylinck1997@gmail.com</div>
             <div style={{ position: 'absolute', float: 'left', bottom: 0, padding: 5 + 'px'}}>&copy; Cornelius Frylinck - 2020</div>
           </footer>
