@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { LinkedinOutlined, GooglePlusOutlined, GithubOutlined } from '@ant-design/icons';
+import { LinkedinOutlined, GooglePlusOutlined, GithubOutlined, MailOutlined } from '@ant-design/icons';
 
 //<li className="txt skills"><a href="/#">Skills</a></li> '../src/img/me.png' <PostCard post={post} />
 
@@ -25,7 +25,7 @@ function App() {
               <h1 className="txt">Skills</h1>
             </div>
             <div id="projPage" className="projPage hidden">
-              <h1 className="txt">Favorite 2020 Projects</h1>
+              <h1 className="txt">Favorite 2021 Projects</h1>
               <h2 className="txt">Completed - at least for now ;)</h2>
               <p className="projItem hovertxt">
                 <a className="stxt" href="https://github.com/Cornelius27584046/python-Djarvis"><GithubOutlined /> Python Djarvis
@@ -40,10 +40,14 @@ function App() {
                 </a><br/>
                 <a href="/#">A connect 4 game that is written in Python3 where you play against an AI that is written using the MiniMax algorithm.</a>
               </p>
-              <p className="projItem hovertxt">
-                <a className="stxt" href="https://github.com/Cornelius27584046/unity3D-Arena-Game"><GithubOutlined /> Unity 3D Arena Game
-                   </a><br/>
-                <a href="/#">Small but cool 3D game written by following a tutorial by AwesomeTuts.</a>
+              <p className="projItem">
+                <a className="stxt hovertxt" href="http://luxitlegalbill.co.za/"> Luxit Legal Bill
+                  <img className="hoverimg" src={require('../src/img/luxit.png')} alt="please use a different browser"/>
+                </a><br/>
+                <a href="/#">
+                  A legal bill of cost generator that has a login system and allows users to create bills of cost by entering the details of each item one at a time, viewing the product in a table view and finally downloading a pdf-version of the bill. <br/>
+                  Written in HTML, CSS, JS and PHP.
+                </a>
               </p>
               <p className="projItem">
                 <a className="stxt hovertxt" href="http://luxitlegalbill.co.za/"> Luxit Legal Bill
@@ -54,17 +58,45 @@ function App() {
                   Written in HTML, CSS, JS and PHP.
                 </a>
               </p>
-              <h2 className="txt">In Progress</h2>
               <p className="projItem">
-                <a href="/#" className="stxt"> name: to be decided</a><br/>
-                <a href="/#">Unity 3D Endless runner game where you play as a slime. In the beginning all you can do is dodge, but as you level up you will start learning how to attack.</a>
+                <a className="stxt hovertxt" href="/#"> Scrapping Dashboard
+                  <img className="hoverimg" src={require('../src/img/scrapping.png')} alt="please use a different browser"/>
+                </a><br/>
+                <a href="/#">
+                  A custom dashboard created on SYSPRO to ease and improve the client's item scrapping process.
+                </a>
               </p>
               <p className="projItem">
-                <a href="/#" className="stxt"> name: to be decided</a><br/>
+                <a className="stxt hovertxt" href="/#"> Multiple File Checker
+                  <img className="hoverimg" src={require('../src/img/multiCheck.png')} alt="please use a different browser"/>
+                </a><br/>
+                <a href="/#">
+                  A utility program used to search a specified value through multiple files of specified file types.
+                </a>
+              </p>
+              <h2 className="txt">In Progress</h2>
+              <p className="projItem">
+                <a className="stxt hovertxt" href="https://savethedate.azurewebsites.net/"> Save The Date
+                  <img className="hoverimg" src={require('../src/img/saveTheDate.png')} alt="please use a different browser"/>
+                </a><br/>
+                <a href="/#">
+                  An ASP.NET Core website where wedding details can be added and a link can be sent to guests to simplify RSVP and information-sharing aspects of a wedding.
+                </a>
+              </p>
+              <p className="projItem">
+                <a className="stxt hovertxt" href="/#"> Scanner App
+                  <img className="hoverimg" src={require('../src/img/scannerApp.png')} alt="please use a different browser"/>
+                </a><br/>
+                <a href="/#">
+                  A Xamarin app that can be used to simplify inventory management by scanning barcodes and posting the data via Business Objects to SYSPRO through a web API hosted on IIS.
+                </a>
+              </p>
+              <p className="projItem">
+                <a href="/#" className="stxt"> Trouble in Paradise</a><br/>
                 <a href="/#">
                   Text-based RTS game. The Earth is dying fast so your country has sent you to claim a planet in space. The only problem is that other countries had the same idee...<br/>
                   The ship can't make it back, so your only option is to fight. First you build a base, then an army. <br/>
-                  Written in HTML, CSS, JSS with an Express backend that uses sockets.
+                  Written in HTML, CSS, JSS with an Express backend that uses sockets, remake in progress with ASP.NET Core.
                 </a>
               </p>
               <br /><br /><br /><br />
@@ -73,19 +105,32 @@ function App() {
               <h1 className="txt">About</h1>
               <h2>About The Website:</h2>
               <p>
-                This website was written using React, CSS, JS and is hosted to IBM Cloud with a CI/CD pipeline. <br/>
+                This website was written using React, CSS, JS. <br/>
+                First hosted to IBM Cloud with a CI/CD pipeline -<br/>thereafter moved to Netlifyagain with a CI/CD pipline that re-publishes the site as soon as changes are sent to GitHub after the IBM Cloud trial expired. <br/>
                 The background was made by creating a canvas and controlling it with JS. <br/> PS. Try clicking and holding your left mouse button. <br />
 
 
               </p>
               <h2>About the owner:</h2>
               <p>
-                I am a coder by lifestyle.<br/>
-                Before November 2019, I was using a dual-core 1.4Ghz laptop.<br/>
-                This made programming in general difficult and tedious, some programs, <br/>such as Visual Studio, would often take over an hour just to start up and open a project. <br/>
-                But in November 2020 I chose to get a new laptop on my contract upgrade instead of a new phone. <br/>
-                My new laptop is leaps and bounds ahead of my old one, making programming an absolute joy. <br/>
-                Since then I have been working on C, C++, Java, Python, Full Stack Web, C# as well as Game Development.
+                Developer by Profession. Coder by lifestyle.<br/>
+                Born on 8 September 1997<br/>
+                Married since 20 September 2021<br/>
+                Full Stack .NET Developer / SYSPRO Analyst at iPlan Global since 30 November 2020 (Why start last day of the month? Because it was a Monday and made more sense than starting on a Tuesday)<br/><br/>
+                Favorite languages by function:<br/>
+                - Web: ASP.NET Core MVC - with a lot of JavaScript mixed in to make up for the lack of flexibility of model-driven approaches <br/>
+                - Desktop: C# - because of the power Visual Studio brings <br/>
+                - Mobile: between Xamarin and Cordova - Xamarin is easy to use, manage and build, but when client-server communication is required, it needs to be done seperately with an API <br/>
+                - Source Control: Azure Devops and GitHub  <br/>
+                <br/><br/>
+                Hobbies:
+                - Watching anime
+                - Gaming (currently Valheim)
+                - Exercise (almost anything except running or anything with stairs)
+                - Anything interesting (most recently shooting and archery)
+                - Learning something new (usually coding- or language related)
+                <br/><br/>
+                Experience working with C, C++, Java, Python, Full Stack Web (Vanilla languages with Express.js backend as well as ASP.NET Core), C# as well as Game Development with Unity.
               </p><br/><br/><br/><br/><br/>
             </div>
             <div className='app-canvas'>
@@ -94,9 +139,12 @@ function App() {
           </div>
           <footer style={{ width: '100vw', left: 0 }}>
             <div><a className="hovertxt" href="https://www.linkedin.com/in/cornelius-frylinck-710698188"><LinkedinOutlined /> Cornelius Frylinck</a></div>
-            <div><a className="hovertxt" href="https://github.com/Cornelius27584046"><GithubOutlined /> Cornelius27584046</a></div>
-            <div><GooglePlusOutlined /> cfrylinck1997@gmail.com</div>
-            <div style={{ position: 'absolute', float: 'left', bottom: 0, padding: 5 + 'px'}}>&copy; Cornelius Frylinck - 2020</div>
+            <div><a className="hovertxt" href="https://github.com/CorneliusFrylinck"><GithubOutlined /> New Github</a></div>
+            <div><a className="hovertxt" href="https://github.com/Cornelius2758"><GithubOutlined /> Old Github</a></div>
+            <div><a className="hovertxt" href="https://github.com/Cornelius27584046"><GithubOutlined /> University Github</a></div>
+            <div><a href="corneliusfrylinck@zohomail.com"><MailOutlined /> Email</a></div>
+            <div><a href="cfrylinck1997@gmail.com"><GooglePlusOutlined /> Gmail alternate</a></div>
+            <div style={{ position: 'absolute', float: 'left', bottom: 0, padding: 5 + 'px'}}>&copy; Cornelius Frylinck - 2021</div>
           </footer>
         </div>
         <div id="spinnerContainer" className="shown">
