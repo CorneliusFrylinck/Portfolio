@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { LinkedinOutlined, GooglePlusOutlined, GithubOutlined, MailOutlined } from '@ant-design/icons';
+import { LinkedinOutlined, GooglePlusOutlined, GithubOutlined } from '@ant-design/icons';
 
 //<li className="txt skills"><a href="/#">Skills</a></li> '../src/img/me.png' <PostCard post={post} />
 
@@ -131,7 +131,7 @@ function App() {
           <footer style={{ width: '100vw', left: 0 }}>
             <div><a className="hovertxt" href="https://www.linkedin.com/in/cornelius-frylinck-710698188"><LinkedinOutlined /> Cornelius Frylinck</a></div>
             <div><a className="hovertxt" href="https://github.com/CorneliusFrylinck"><GithubOutlined /> New Github &</a><a className="hovertxt" href="https://github.com/Cornelius2758"><GithubOutlined /> Old Github </a></div>
-            <div><a className="hovertxt"  href="corneliusfrylinck@zohomail.com"><MailOutlined /> Email</a></div>
+            <div><a className="hovertxt"  href="corneliusfrylinck@zohomail.com"><GooglePlusOutlined /> Email</a></div>
             <div style={{ position: 'absolute', float: 'left', bottom: 0, padding: 5 + 'px'}}>&copy; Cornelius Frylinck - 2021</div>
           </footer>
         </div>
