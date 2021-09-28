@@ -114,8 +114,9 @@ function App() {
                 - Mobile: between Xamarin and Cordova - Xamarin is easy to use, manage and build, but when client-server communication is required, it needs to be done seperately with an API <br/>
                 - Source Control: Azure Devops and GitHub  </div>
                 <br/><br/>
+                <div style={{ float: 'left', left: 0}}>
                 Hobbies:
-                <div style={{ float: 'left', left: 0}}>- Watching anime<br/>
+                - Watching anime<br/>
                 - Gaming (currently Valheim)<br/>
                 - Exercise (almost anything except running or anything with stairs)<br/>
                 - Anything interesting (most recently shooting and archery)<br/>
@@ -124,6 +125,7 @@ function App() {
                 Experience working with C, C++, Java, Python, Full Stack Web (Vanilla languages with Express.js backend as well as ASP.NET Core), C# as well as Game Development with Unity.
               </p><br/><br/><br/><br/><br/>
             </div>
+            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             <div className='app-canvas'>
               <canvas id="ctx" style={{ top: 0, left: 0, width: '100%', height: '100%', position:'relative' }}></canvas>
             </div>
