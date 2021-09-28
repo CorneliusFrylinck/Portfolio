@@ -108,26 +108,23 @@ function App() {
                 Born on 8 September 1997<br/>
                 Married since 20 September 2021<br/>
                 Full Stack .NET Developer / SYSPRO Analyst at iPlan Global since 30 November 2020 (Why start last day of the month? Because it was a Monday and made more sense than starting on a Tuesday)<br/><br/>
-                Favorite languages by function:<br/>
-                <div style={{ float: 'left', left: 0}}>- Web: ASP.NET Core MVC - with a lot of JavaScript mixed in to make up for the lack of flexibility of model-driven approaches <br/>
+                <h3>Favorite languages by function:</h3><br/>
+                - Web: ASP.NET Core MVC - with a lot of JavaScript mixed in to make up for the lack of flexibility of model-driven approaches <br/>
                 - Desktop: C# - because of the power Visual Studio brings <br/>
                 - Mobile: between Xamarin and Cordova - Xamarin is easy to use, manage and build, but when client-server communication is required, it needs to be done seperately with an API <br/>
-                - Source Control: Azure Devops and GitHub  </div>
+                - Source Control: Azure Devops and GitHub
                 <br/><br/>
-                <div>
-                  <div className="d-flex flex-row">
-                    <span>Hobbies:</span><br/>
+                    <h3>Hobbies:</h3><br/>
                     <span>- Watching anime</span><br/>
                     <span>- Gaming (currently Valheim)</span><br/>
                     <span>- Exercise (almost anything except running or anything with stairs)</span><br/>
                     <span>- Anything interesting (most recently shooting and archery)</span><br/>
                     <span>- Learning something new (usually coding- or language related)</span></div>
-                  </div>
                 <br/><br/>
                 Experience working with C, C++, Java, Python, Full Stack Web (Vanilla languages with Express.js backend as well as ASP.NET Core), C# as well as Game Development with Unity.
-              </p><br/><br/><br/><br/><br/>
-            </div>
-            <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+              </p>
+              <br/><br/><br/><br/><br/>
+            <br/><br/><br/><br/><br/><br/>
             <div className='app-canvas'>
               <canvas id="ctx" style={{ top: 0, left: 0, width: '100%', height: '100%', position:'relative' }}></canvas>
             </div>
