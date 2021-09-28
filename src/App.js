@@ -115,13 +115,13 @@ function App() {
                 - Source Control: Azure Devops and GitHub  </div>
                 <br/><br/>
                 <div>
-                  <div style={{ float: 'left', left: 0, display: 'block'}}>
-                    Hobbies:<br/>
-                    - Watching anime<br/>
-                    - Gaming (currently Valheim)<br/>
-                    - Exercise (almost anything except running or anything with stairs)<br/>
-                    - Anything interesting (most recently shooting and archery)<br/>
-                    - Learning something new (usually coding- or language related)</div>
+                  <div className="d-flex flex-row">
+                    <span>Hobbies:</span><br/>
+                    <span>- Watching anime</span><br/>
+                    <span>- Gaming (currently Valheim)</span><br/>
+                    <span>- Exercise (almost anything except running or anything with stairs)</span><br/>
+                    <span>- Anything interesting (most recently shooting and archery)</span><br/>
+                    <span>- Learning something new (usually coding- or language related)</span></div>
                   </div>
                 <br/><br/>
                 Experience working with C, C++, Java, Python, Full Stack Web (Vanilla languages with Express.js backend as well as ASP.NET Core), C# as well as Game Development with Unity.
