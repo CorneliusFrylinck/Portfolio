@@ -106,12 +106,12 @@ function App() {
               <h2>About The Website:</h2>
               <p>
                 This website was written using React, CSS, JS. <br/>
-                First hosted to IBM Cloud with a CI/CD pipeline -<br/>thereafter moved to Netlifyagain with a CI/CD pipline that re-publishes the site as soon as changes are sent to GitHub after the IBM Cloud trial expired. <br/>
+                First hosted to IBM Cloud with a CI/CD pipeline -<br/>thereafter moved to Netlify, again with a CI/CD pipline that re-publishes the site as soon as changes are sent to GitHub, after the IBM Cloud trial expired. <br/>
                 The background was made by creating a canvas and controlling it with JS. <br/> PS. Try clicking and holding your left mouse button. <br />
 
 
               </p>
-              <h2>About the owner:</h2>
+              <h2>About the developer:</h2>
               <p>
                 Developer by Profession. Coder by lifestyle.<br/>
                 Born on 8 September 1997<br/>
@@ -126,9 +126,9 @@ function App() {
                     <h3>Hobbies:</h3><br/>
                     <span>- Watching anime</span><br/>
                     <span>- Gaming (currently Valheim)</span><br/>
-                    <span>- Exercise (almost anything except running or anything with stairs)</span><br/>
                     <span>- Anything interesting (most recently shooting and archery)</span><br/>
                     <span>- Learning something new (usually coding- or language related)</span>
+                    <span>- Exercise (almost anything except running or anything with stairs)</span><br/>
                 <br/><br/>
                 Experience working with C, C++, Java, Python, Full Stack Web (Vanilla languages with Express.js backend as well as ASP.NET Core), C# as well as Game Development with Unity.
               </p>
