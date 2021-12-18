@@ -202,66 +202,67 @@
       about.addEventListener('click', () => {
         to_state = 'about';
       })
+
+        init()
+        animate()
+
+        setInterval(function(){
+          try {
+            if(state != to_state) {
+              pageSwitch = true;
+              pageCount = 0;
+              if(to_state == "home") {
+                home.classList.add('active');
+                homePage.classList.remove('hidden');
+                home.disabled = true;
+              }else if(to_state == "proj") {
+                proj.classList.add('active');
+                projPage.classList.remove('hidden');
+                proj.disabled = true;
+              }/*else if(to_state == "skills") {
+                skills.classList.add('active');
+                skillsPage.classList.remove('hidden');
+                skills.disabled = true;
+              }*/else if(to_state == "about") {
+                about.classList.add('active');
+                aboutPage.classList.remove('hidden');
+                about.disabled = true;
+              }
+
+              if(state == "home") {
+                home.classList.remove('active');
+                homePage.classList.add('hidden');
+                home.disabled = false;
+              }else if(state == "proj") {
+                proj.classList.remove('active');
+                projPage.classList.add('hidden');
+                proj.disabled = false;
+              }/*else if(state == "skills") {
+                skills.classList.remove('active');
+                skillsPage.classList.add('hidden');
+                skills.disabled = false;
+              }*/else if(state == "about") {
+                about.classList.remove('active');
+                aboutPage.classList.add('hidden');
+                about.disabled = false;
+              }else {
+                console.log("remove nothing");
+              }
+              state = to_state;
+            }
+
+          }catch (err) {
+            console.log(err);
+          }
+        },1000/25);
+
+        main.classList.remove('hidden');
+        spinner.classList.add('hidden');
+        spinner.classList.remove('shown');
   })
 
-    window.addEventListener('load', (event) => {
-      init()
-      animate()
+    /*window.addEventListener('load', (event) => {
 
-      setInterval(function(){
-        try {
-          if(state != to_state) {
-            pageSwitch = true;
-            pageCount = 0;
-            if(to_state == "home") {
-              home.classList.add('active');
-              homePage.classList.remove('hidden');
-              home.disabled = true;
-            }else if(to_state == "proj") {
-              proj.classList.add('active');
-              projPage.classList.remove('hidden');
-              proj.disabled = true;
-            }/*else if(to_state == "skills") {
-              skills.classList.add('active');
-              skillsPage.classList.remove('hidden');
-              skills.disabled = true;
-            }*/else if(to_state == "about") {
-              about.classList.add('active');
-              aboutPage.classList.remove('hidden');
-              about.disabled = true;
-            }
-
-            if(state == "home") {
-              home.classList.remove('active');
-              homePage.classList.add('hidden');
-              home.disabled = false;
-            }else if(state == "proj") {
-              proj.classList.remove('active');
-              projPage.classList.add('hidden');
-              proj.disabled = false;
-            }/*else if(state == "skills") {
-              skills.classList.remove('active');
-              skillsPage.classList.add('hidden');
-              skills.disabled = false;
-            }*/else if(state == "about") {
-              about.classList.remove('active');
-              aboutPage.classList.add('hidden');
-              about.disabled = false;
-            }else {
-              console.log("remove nothing");
-            }
-            state = to_state;
-          }
-
-        }catch (err) {
-          console.log(err);
-        }
-      },1000/25);
-
-      main.classList.remove('hidden');
-      spinner.classList.add('hidden');
-      spinner.classList.remove('shown');
-
-    });
+    });*/
   </script>
 </html>
