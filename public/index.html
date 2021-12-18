@@ -56,167 +56,161 @@
                 getCtx()
             }, 200);
 
-            return;
+          }else {var ctx = canvas.getContext("2d");
+          ctx.font = '10px Arial';
+
+          var pageSwitch = false;
+          var pageCount = 0;
+
+          var home;
+          var proj;
+          var skills;
+          var about;
+
+          var homePage;
+          var projPage;
+          var skillsPage;
+          var aboutPage;
+
+          const colors = [
+            '#2185C5',
+            '#7ECEFD',
+            '#FFF6E5',
+            '#FF7F66',
+            '#FFF249',
+            '#FFDF00',
+            '#FBFF87'
+          ]
+
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+          const width = document.documentElement.clientWidth;
+          const height = document.documentElement.clientHeight;
+
+          class Particle {
+            constructor(x, y, r, c) {
+              this.x = x;
+              this.y = y;
+              this.r = r;
+              this.c = c;
+            }
+
+            draw() {
+              ctx.beginPath();
+              ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2, false);
+              ctx.shadowColor = this.c;
+              ctx.shadowBlur = 15;
+              ctx.fillStyle = this.c;
+              ctx.fill();
+              ctx.closePath();
+            }
+
+            update() {
+              this.draw();
+            }
           }
-        }
-        getCtx();
-        var ctx = canvas.getContext("2d");
-        ctx.font = '10px Arial';
 
-        var pageSwitch = false;
-        var pageCount = 0;
-
-        var home;
-        var proj;
-        var skills;
-        var about;
-
-        var homePage;
-        var projPage;
-        var skillsPage;
-        var aboutPage;
-
-        const colors = [
-          '#2185C5',
-          '#7ECEFD',
-          '#FFF6E5',
-          '#FF7F66',
-          '#FFF249',
-          '#FFDF00',
-          '#FBFF87'
-        ]
-
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-        const width = document.documentElement.clientWidth;
-        const height = document.documentElement.clientHeight;
-
-        class Particle {
-          constructor(x, y, r, c) {
-            this.x = x;
-            this.y = y;
-            this.r = r;
-            this.c = c;
+          var mouse = {
+            x: 0,
+            y: 0
           }
 
-          draw() {
-            ctx.beginPath();
-            ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2, false);
-            ctx.shadowColor = this.c;
-            ctx.shadowBlur = 15;
-            ctx.fillStyle = this.c;
-            ctx.fill();
-            ctx.closePath();
-          }
+          window.addEventListener('mousemove', (event) => {
+            mouse.x = event.clientX;
+            mouse.y = event.clientY;
+          });
 
-          update() {
-            this.draw();
-          }
-        }
-
-        var mouse = {
-          x: 0,
-          y: 0
-        }
-
-        window.addEventListener('mousemove', (event) => {
-          mouse.x = event.clientX;
-          mouse.y = event.clientY;
-        });
-
-        let mouseDown = false;
-        window.addEventListener('mousedown', (event) => {
-          mouseDown = true;
-        })
-        window.addEventListener('mouseup', (event) => {
-          mouseDown = false;
-        })
-
-        window.addEventListener('resize', (event) => {
-          canvas.width = innerWidth;
-          canvas.height = innerHeight;
-
-          init();
-        })
-
-        let particles;
-
-        function init() {
-          particles = [];
-          let nrParticles = Math.floor((canvas.width + canvas.height) / 2);
-
-          for (let i = 0; i < nrParticles; i++) {
-            const canvasWidth = canvas.width + canvas.height / 2;
-            const canvasHeight = canvas.height + canvas.width / 2;
-            const x = (Math.random() * canvasWidth) - canvasWidth / 2;
-            const y = (Math.random() * canvasHeight) - canvasHeight / 2;
-            const r = Math.random() * 2;
-            const c = Math.floor(Math.random() * colors.length);
-
-            particles.push(new Particle(x, y, r, colors[c]));
-          }
-        }
-
-        let radians = 0;
-        let radInc = 0.001;
-        let alpha = 1;
-
-
-        if(isMobile) {
-          alpha = 5;
-          radInc *= 5;
-        }
-        //##############################################################################animate
-        function animate() {
-          ctx.fillStyle = `rgba(10, 10, 10, ${alpha})`;
-          requestAnimationFrame(animate);
-          ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-          ctx.save();
-          ctx.translate(canvas.width / 2, canvas.height / 2);
-          ctx.rotate(radians);
-          particles.forEach(particle => {
-            particle.update();
+          let mouseDown = false;
+          window.addEventListener('mousedown', (event) => {
+            mouseDown = true;
           })
-          ctx.restore()
-          radians += radInc;
+          window.addEventListener('mouseup', (event) => {
+            mouseDown = false;
+          })
 
-          if(mouseDown  || (pageSwitch && pageCount < 200)) {
-            if(alpha >= 0.03)
-              alpha -= 0.02;
-            radians += radInc *5;
-            pageCount += 1;
-          }else if(!mouseDown && alpha < 1) {
-            alpha += 0.05;
+          window.addEventListener('resize', (event) => {
+            canvas.width = innerWidth;
+            canvas.height = innerHeight;
+
+            init();
+          })
+
+          let particles;
+
+          function init() {
+            particles = [];
+            let nrParticles = Math.floor((canvas.width + canvas.height) / 2);
+
+            for (let i = 0; i < nrParticles; i++) {
+              const canvasWidth = canvas.width + canvas.height / 2;
+              const canvasHeight = canvas.height + canvas.width / 2;
+              const x = (Math.random() * canvasWidth) - canvasWidth / 2;
+              const y = (Math.random() * canvasHeight) - canvasHeight / 2;
+              const r = Math.random() * 2;
+              const c = Math.floor(Math.random() * colors.length);
+
+              particles.push(new Particle(x, y, r, colors[c]));
+            }
           }
-        }
 
-        const main = document.getElementById('mainPart');
-        const spinner = document.getElementById('spinnerContainer');
-      home = document.querySelector('.hm');
-      proj = document.querySelector('.proj');
-      //skills = document.querySelector('.skills');
-      about = document.querySelector('.about');
+          let radians = 0;
+          let radInc = 0.001;
+          let alpha = 1;
 
-      homePage = document.getElementById('homePage');
-      projPage = document.getElementById('projPage');
-      //skillsPage = document.getElementById('skillsPage');
-      aboutPage = document.getElementById('aboutPage');
 
-      home.addEventListener('click', () => {
-        to_state = 'home';
-      })
-      proj.addEventListener('click', () => {
-        to_state = 'proj';
-      })
-      /*skills.addEventListener('click', () => {
-        to_state = 'skills';
-      })*/
-      about.addEventListener('click', () => {
-        to_state = 'about';
-      })
+          if(isMobile) {
+            alpha = 5;
+            radInc *= 5;
+          }
+          //##############################################################################animate
+          function animate() {
+            ctx.fillStyle = `rgba(10, 10, 10, ${alpha})`;
+            requestAnimationFrame(animate);
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-        init()
+            ctx.save();
+            ctx.translate(canvas.width / 2, canvas.height / 2);
+            ctx.rotate(radians);
+            particles.forEach(particle => {
+              particle.update();
+            })
+            ctx.restore()
+            radians += radInc;
+
+            if(mouseDown  || (pageSwitch && pageCount < 200)) {
+              if(alpha >= 0.03)
+                alpha -= 0.02;
+              radians += radInc *5;
+              pageCount += 1;
+            }else if(!mouseDown && alpha < 1) {
+              alpha += 0.05;
+            }
+          }
+
+          const main = document.getElementById('mainPart');
+          const spinner = document.getElementById('spinnerContainer');
+        home = document.querySelector('.hm');
+        proj = document.querySelector('.proj');
+        //skills = document.querySelector('.skills');
+        about = document.querySelector('.about');
+
+        homePage = document.getElementById('homePage');
+        projPage = document.getElementById('projPage');
+        //skillsPage = document.getElementById('skillsPage');
+        aboutPage = document.getElementById('aboutPage');
+
+        home.addEventListener('click', () => {
+          to_state = 'home';
+        })
+        proj.addEventListener('click', () => {
+          to_state = 'proj';
+        })
+        /*skills.addEventListener('click', () => {
+          to_state = 'skills';
+        })*/
+        about.addEventListener('click', () => {
+          to_state = 'about';
+        })
         animate()
 
         setInterval(function(){
@@ -272,6 +266,12 @@
         main.classList.remove('hidden');
         spinner.classList.add('hidden');
         spinner.classList.remove('shown');
+          }
+        }
+        getCtx();
+
+
+        init()
   })
 
     /*window.addEventListener('load', (event) => {
