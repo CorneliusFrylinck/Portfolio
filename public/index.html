@@ -46,7 +46,17 @@
 
         var state = "home";
         var to_state = "home";
+
         var canvas = document.getElementById("ctx");
+
+        function getCtx() {
+          canvas = document.getElementById("ctx");
+          if (canvas == null) {
+            getCtx()
+            return;
+          }
+        }
+        getCtx();
         var ctx = canvas.getContext("2d");
         ctx.font = '10px Arial';
 
