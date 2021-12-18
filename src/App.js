@@ -128,13 +128,12 @@ function App() {
                     <span>- Gaming (currently Valheim)</span><br/>
                     <span>- Exercise (almost anything except running or anything with stairs)</span><br/>
                     <span>- Anything interesting (most recently shooting and archery)</span><br/>
-                    <span>- Learning something new (usually coding- or language related)</span>
+                    <span>- Learning something new (usually coding- or language related)</span></div>
                 <br/><br/>
                 Experience working with C, C++, Java, Python, Full Stack Web (Vanilla languages with Express.js backend as well as ASP.NET Core), C# as well as Game Development with Unity.
               </p>
               <br/><br/><br/><br/><br/>
-              <br/><br/><br/><br/><br/><br/>
-            </div>
+            <br/><br/><br/><br/><br/><br/>
             <div className='app-canvas'>
               <canvas id="ctx" style={{ top: 0, left: 0, width: '100%', height: '100%', position:'relative' }}></canvas>
             </div>
