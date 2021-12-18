@@ -52,7 +52,10 @@
         function getCtx() {
           canvas = document.getElementById("ctx");
           if (canvas == null) {
-            getCtx()
+            setTimeout(function(){
+                getCtx()
+            }, 200);
+
             return;
           }
         }
