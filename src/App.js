@@ -67,7 +67,7 @@ function App() {
               </p>
               <h2 className="txt">In Progress</h2>
               <p className="projItem">
-                <a className="stxt hovertxt" href="https://savethedate.azurewebsites.net/"> Save The Date
+                <a className="stxt hovertxt" href="/#"> Save The Date
                   <img className="hoverimg" src={require('../src/img/saveTheDate.png')} alt="please use a different browser"/>
                 </a><br/>
                 <a href="/#">
@@ -79,7 +79,7 @@ function App() {
                   <img className="hoverimg" src={require('../src/img/scannerApp.png')} alt="please use a different browser"/>
                 </a><br/>
                 <a href="/#">
-                  A Xamarin app that can be used to simplify inventory management by scanning barcodes and posting the data via Business Objects to SYSPRO through a web API hosted on IIS.
+                  A Xamarin app that can be used to simplify inventory management by scanning barcodes and posting the data via Business Objects to SYSPRO through a .NET Core web API hosted on IIS.
                 </a>
               </p>
               <p className="projItem">
@@ -88,6 +88,15 @@ function App() {
                   Text-based RTS game. The Earth is dying fast so your country has sent you to claim a planet in space. The only problem is that other countries had the same idee...<br/>
                   The ship can't make it back, so your only option is to fight. First you build a base, then an army. <br/>
                   Written in HTML, CSS, JSS with an Express backend that uses sockets, remake in progress with ASP.NET Core.
+                </a>
+              </p>
+              <p className="projItem">
+                <a className="stxt hovertxt" href="/#"> Veg Intake
+                  <img className="hoverimg" src={require('../src/img/vegIntake.png')} alt="please use a different browser"/>
+                </a><br/>
+                <a href="/#">
+                  An existing system written by a different developer at iPlan is used by a client to manage their fruit procurement.<br/>
+                  The client decided they wanted a few changes on the current system to be able to use it for their <img className="hoverimg" src={require('../src/img/vegIntake1.png')} alt="please use a different browser">fruit procurement</img>.
                 </a>
               </p>
               <br /><br /><br /><br />
@@ -132,7 +141,7 @@ function App() {
           </div>
           <footer style={{ width: '100vw', left: 0 }}>
             <div><a className="hovertxt" href="https://www.linkedin.com/in/cornelius-frylinck-710698188"><LinkedinOutlined /> Cornelius Frylinck</a></div>
-            <div><a className="hovertxt" href="https://github.com/CorneliusFrylinck"><GithubOutlined /> New Github &</a><a className="hovertxt" href="https://github.com/Cornelius2758"><GithubOutlined /> Old Github </a></div>
+            <div><a className="hovertxt" href="https://github.com/CorneliusFrylinck"><GithubOutlined /> Github</a></div>
             <div><a className="hovertxt"  href="corneliusfrylinck@zohomail.com"><GooglePlusOutlined /> Email</a></div>
             <div style={{ position: 'absolute', float: 'left', bottom: 0, padding: 5 + 'px'}}>&copy; Cornelius Frylinck - 2021</div>
           </footer>
