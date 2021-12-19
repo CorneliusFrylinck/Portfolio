@@ -97,7 +97,7 @@ function App() {
                 <a href="/#">
                   An existing system written by a different developer at iPlan is used by a client to manage their fruit procurement.<br/>
                   The client decided they wanted a few changes on the current system to be able to use it for their <a className="stxt hovertxt" href="/#">vegetable produrement.
-                    <img className="hoverimg" src={require('../src/img/vegIntake1.png')} alt="please use a different browser"/>
+                    <img className="hoverimg" src={require('../src/img/vegIntakeb.png')} alt="please use a different browser"/>
                   </a>
                 </a>
               </p>
