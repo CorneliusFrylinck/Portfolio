@@ -92,13 +92,11 @@ function App() {
               </p>
               <p className="projItem">
                 <a className="stxt hovertxt" href="/#"> Veg Intake
-                  <img className="hoverimg" src={require('../src/img/vegIntake.png')} alt="please use a different browser"/>
+                  <img className="hoverimg" src={require('../src/img/vegIntakeb.png')} alt="please use a different browser"/>
                 </a><br/>
                 <a href="/#">
                   An existing system written by a different developer at iPlan is used by a client to manage their fruit procurement.<br/>
-                  The client decided they wanted a few changes on the current system to be able to use it for their <a className="stxt hovertxt" href="/#">vegetable produrement.
-                    <img className="hoverimg" src={require('../src/img/vegIntakeb.png')} alt="please use a different browser"/>
-                  </a>
+                  The client decided they wanted a few changes on the current system to be able to use it for their vegetable produrement.
                 </a>
               </p>
               <br /><br /><br /><br />
